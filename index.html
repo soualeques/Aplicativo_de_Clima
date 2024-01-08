@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Desenvolvimento de minhas habilidades como a Front-end">
+    <meta name="keywords" content="HTML,CSS, previsão do tempo, Javascript, APIs">
+    <meta name="author" content="Alex Nascimento do Carmo">
     <link rel="stylesheet" href="./Styles/style.css">
-    <title>Aplicativo Clima Soualeques</title>
+    <title>Aplicativo Clima - Soualeques</title>
 </head>
 <body>
     <!--criar container-->
@@ -20,7 +23,7 @@
             <p id="temperatura">...</p>
             <!--aparecer imagem dinâmica correspondente ao estado do clima-->
             <div class="Container-menor">
-                <img id="previsao"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC60lEQVR4nO2XTU8TURSGx0QT/4c7jRt1ibLRtKDMtFV/gxtlYaLRFStjp525A4iGD4UgagwrE1kQiYBKO3NvMSRKsXxeSpHvpsR2SmmHXnNLg4XgAIp3XMxJ3t0snpz7nvec4Ti77LLLrv+7KrzB04IMn7kAmq0Q1SwVL6MYL8HHTt/ACcvAymv6jgsAtroVqD/pjRmBqRQZXTFIeDFL+seTRO6OrrsA1Hm/Vl9e03fUCjh4v3M0HVnOEbya31XDi1lyqyOcEgD6xBTSBVDbvc5Rfeo3YKWaSuRJ9YtwigdQYeY5N0C6WefwDn1dyBKPEloreNSnrgsAxQQJNTu88NShA1ZJsLGhN2bsFw6XPPdY3CCRFYN8nEyShvczRsGjAD6llvkjGIeonfcoqKtKgokKUcvxMlqs9GkZOhAHBcS76NtSjtx5HdF5CakHgqSG5gFqu1YXSrUHFvJD3zNkPG4QNJMmnYPLBV8dBiAuevTuq5E070ct+wakcDfbhw/kM/wXCi9liRtAfV+evPQwcIF2jhUcLqr+XTTHS7BxT0DqOfqsLOHwar4Q7i4Z4T0B6UBQz7EGnIhvEE9taI2XoGIa6k5RNejHrAFxMYqqzTbPRRGeo3EyNMe+g7hkqul65CX46BcZIUcEgJrdCtLbA/N5GilWAeJiJ2mIb11D9DS60folyXpysYnk7un1Kj9s4Bxi8MzV2lCKprrVULhE/WM/iEuGM5wA0Nu2gbkNq4HwDtG70imqWe6KX1uF02nLgfAO0RetFLUM5xBVY2zF2qHAu+jDRJK4AIpaFsx4D9X1RA06vJynFnV1BNmvNmyikaXcZsw80E5yTq9adr1ukPlxgE2C+vbLEZ2XYVPp/m2tfh5mdl5hk85ROEFGwbNNg8e2AOneo5CbB+o8+Ty7RiYTbPZxZDlXGIj6nujmL4AMm7bBbTsUvGqZW0FveAnGHd5g3uFVyb/WZZ+WodNKt0bBc3bZZZddHNP6CTDTOCZ4nbtsAAAAAElFTkSuQmCC">
+                <img id="previsao" alt="icone de previsao do tempo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC60lEQVR4nO2XTU8TURSGx0QT/4c7jRt1ibLRtKDMtFV/gxtlYaLRFStjp525A4iGD4UgagwrE1kQiYBKO3NvMSRKsXxeSpHvpsR2SmmHXnNLg4XgAIp3XMxJ3t0snpz7nvec4Ti77LLLrv+7KrzB04IMn7kAmq0Q1SwVL6MYL8HHTt/ACcvAymv6jgsAtroVqD/pjRmBqRQZXTFIeDFL+seTRO6OrrsA1Hm/Vl9e03fUCjh4v3M0HVnOEbya31XDi1lyqyOcEgD6xBTSBVDbvc5Rfeo3YKWaSuRJ9YtwigdQYeY5N0C6WefwDn1dyBKPEloreNSnrgsAxQQJNTu88NShA1ZJsLGhN2bsFw6XPPdY3CCRFYN8nEyShvczRsGjAD6llvkjGIeonfcoqKtKgokKUcvxMlqs9GkZOhAHBcS76NtSjtx5HdF5CakHgqSG5gFqu1YXSrUHFvJD3zNkPG4QNJMmnYPLBV8dBiAuevTuq5E070ct+wakcDfbhw/kM/wXCi9liRtAfV+evPQwcIF2jhUcLqr+XTTHS7BxT0DqOfqsLOHwar4Q7i4Z4T0B6UBQz7EGnIhvEE9taI2XoGIa6k5RNejHrAFxMYqqzTbPRRGeo3EyNMe+g7hkqul65CX46BcZIUcEgJrdCtLbA/N5GilWAeJiJ2mIb11D9DS60folyXpysYnk7un1Kj9s4Bxi8MzV2lCKprrVULhE/WM/iEuGM5wA0Nu2gbkNq4HwDtG70imqWe6KX1uF02nLgfAO0RetFLUM5xBVY2zF2qHAu+jDRJK4AIpaFsx4D9X1RA06vJynFnV1BNmvNmyikaXcZsw80E5yTq9adr1ukPlxgE2C+vbLEZ2XYVPp/m2tfh5mdl5hk85ROEFGwbNNg8e2AOneo5CbB+o8+Ty7RiYTbPZxZDlXGIj6nujmL4AMm7bBbTsUvGqZW0FveAnGHd5g3uFVyb/WZZ+WodNKt0bBc3bZZZddHNP6CTDTOCZ4nbtsAAAAAElFTkSuQmCC">
                 <p id="condicao">...</p>
             </div>
             <!--aparecer porcentagem de umidade-->
