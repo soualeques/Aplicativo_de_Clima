@@ -15,7 +15,7 @@ async function Pesquisar_Cidade(cidade) {
 Botaopesquisar.addEventListener("click", () =>
 {
     const cidade = document.querySelector("#pesquisa").value;
-    document.body.style.backgroundImage = `url("https://source.unsplash.com/1600x900/?${cidade}")`;
+    document.body.style.backgroundImage = `url("https://source.unsplash.com/1600x900/?clima&${cidade}")`;
     Pesquisar_Cidade(cidade);
 })
 
