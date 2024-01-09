@@ -2,6 +2,9 @@
 
 Um aplicativo de clima que exibe informações de clima de acordo com a cidade escolhida pelo usuário. O aplicativo utiliza a API do OpenWeatherMap para obter informações em tempo real e API do unplash para usar imagens relacionadas a cidade que foi pesquisada para colocar como fundo da página.
 
+## Link
+<a href="https://soualeques.github.io/Aplicativo_de_Clima/">Acesse o site aqui!</a>
+
 ## Como usar:
 1. Faça o clone do repositório.
 2. Abra o projeto em seu ambiente de desenvolvimento preferido.
