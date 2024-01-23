@@ -15,10 +15,11 @@
     <!--criar container-->
     <main class="Container">
         <!--criar input com botão para usuario colocar nome da cidade-->
-        <input type="text" id="pesquisa" placeholder="digite sua cidade aqui" required>
+        <input type="search" id="pesquisa" placeholder="digite sua cidade aqui" required pattern="[a-zA-Z\s]+">
         <button id="buscar" type="submit">
             <img id="img-buscar" src="Icones/lupa.png" alt="botão de pesquisa">
         </button>
+        <div id="error-message"></div>
         <div class="Container-medio">
             <!--criar informação que irá aparecer de acordo com a consulta-->
             <h1 id="cidade">tempo em ...</h1>
